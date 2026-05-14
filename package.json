@@ -1,0 +1,24 @@
+{
+  "name": "temp-mail",
+  "version": "1.0.0",
+  "description": "Temporary email service built with Cloudflare Workers",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "temp-mail",
+    "temporary-email",
+    "disposable-email",
+    "cloudflare-workers",
+    "cloudflare-kv"
+  ],
+  "author": "F4txhr",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/wrangler": "^3.0.0",
+    "prettier": "^3.0.0"
+  }
+}
