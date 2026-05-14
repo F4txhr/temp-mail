@@ -1,0 +1,20 @@
+name = "temp-mail"
+main = "src/index.js"
+compatibility_date = "2026-05-14"
+
+[env.production]
+name = "temp-mail-prod"
+routes = [
+  { pattern = "tempmail.example.com/*", zone_name = "example.com" }
+]
+
+[[kv_namespaces]]
+binding = "EMAILS"
+id = "your-kv-namespace-id"
+
+[[kv_namespaces]]
+binding = "MAILBOXES"
+id = "your-mailboxes-namespace-id"
+
+[triggers.crons]
+crons = ["0 */1 * * *"]
